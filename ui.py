@@ -1,0 +1,1 @@
+# Make a ui for each person to interact with the network 
