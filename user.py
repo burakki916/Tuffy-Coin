@@ -5,7 +5,7 @@ import threading
 from ledger import Ledger
 from wallet import Wallet
 #
-class Agent:  
+class User:  
     # Data 
     wallet  : Wallet
     directory : string
@@ -29,7 +29,7 @@ class Agent:
     def remove_peer(self, peer : Peer):
         # Remove a peer from the network 
         self.peers.remove(peer)
-    def send(self, recipent_address : string, amount : float):
+    def tranfer(self, recipent_public_address : string, amount : float):
         # Send money to a peer 
     def generateKeys(self): 
         # Generate the keys for the user
